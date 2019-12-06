@@ -1,6 +1,15 @@
 'use strict';
 
-let number: number = 15;
+
+let a: number = 1;
+let b: number = 15;
+let c: number = 1;
+while (a <= 10) {
+  console.log(c + ' * ' + b + ' = ' + a*b); 
+  a++;
+  c++;
+
+}
 
 // Create a program that
 // prints the multiplication table with number
