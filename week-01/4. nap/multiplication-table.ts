@@ -1,9 +1,9 @@
 'use strict';
 
-
 let a: number = 1;
 let b: number = 15;
 let c: number = 1;
+
 while (a <= 10) {
   console.log(c + ' * ' + b + ' = ' + a*b); 
   a++;
