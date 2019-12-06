@@ -1,14 +1,24 @@
 'use strict';
 
 let lineCount: number = 4;
-let a: number = 0;
-let b: string = '*';
 
-while (a < lineCount) {
-    console.log(b)
-    b = b + '*';
-    a++;
+for (let i: number = 0; i < lineCount; i++) {
+    let line: string = '';
+    for (let j: number = 0; j <= i; j++) {
+        line +=  '*';
+    }
+    console.log(line)
 }
+
+
+// let a: number = 0;
+// let b: string = '*';
+
+// while (a < lineCount) {
+//     console.log(b)
+//     b = b + '*';
+//     a++;
+// }
 
 // Write a program that draws a triangle like this:
 //
