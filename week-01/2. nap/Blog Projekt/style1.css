@@ -1,0 +1,91 @@
+html{
+    margin: 0px auto;
+}
+
+body{
+    font-family: 'Solway', serif;
+    margin: 0px auto;
+    background-image: url(assets/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#mainbody{
+    padding: 5px 5px 5px 20px;
+    margin: auto 100px;
+}
+
+h1{
+    font-weight: 700;
+    background-color: #e8dccd;
+    margin: 0px;
+    padding: 5px 5px 5px 20px;
+    border-bottom: 1px solid grey;
+}
+
+h2{
+    display: inline-block;
+    padding: 3px 6px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #e8dccd;
+}
+
+h3{
+    font-weight: bold;
+    margin: 15px auto 6px;
+}
+
+#h3content{
+    color: darkgrey;
+    border: 2px solid black;
+    padding: 3px;
+    display: inline-block; /*szoveg vegeig tart a borderbox*/
+}
+
+#content1{
+    display: inline-block;
+    border: 2px solid black;
+    padding: 3px;
+    margin: 3px auto 3px;
+}
+
+#submit{
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 3px 6px;
+    background-color: #e8dccd;
+}
+
+#post1{
+    display: inline-block;
+    border: 2px solid black;
+}
+
+#post1title{
+    font-weight: bold;
+    font-size: 140%;
+    margin: 10px 4px;
+}
+
+#post1content{
+    margin: 5px 8px;
+}
+
+#post2{
+    display: inline-block;
+    border: 2px solid black;
+    margin-top: 20px;
+}
+
+#post2title{
+    font-weight: bold;
+    font-size: 140%;
+    margin: 10px 4px;
+}
+
+#post2content{
+    margin: 5px 8px;
+}
