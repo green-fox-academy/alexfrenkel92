@@ -1,25 +1,21 @@
 'use strict';
 
-// let lineCount: number = 4;
-// let line: string = '';
-// let i: number = 0;
-// let j: string = '*';
+let lineCount: number = 4;
 
-
-// for (i; i < lineCount; i++) {
-//     for (let b = 0; b < lineCount; b++)
-// console.log(j)
-// j = j + '*';
-// }
-
-let rows: number = 4;
-
-for (let x = 1; x<= rows; ++x) {
-    for (let y = 1; y <= x; ++y) {
-        console.log( y + ' ')
+for (let i: number = 0; i < lineCount; i++) {
+    let line: string = '';
+        for (let j: number = 0; j <= (2 * lineCount - 1); j++) {
+            
+                line += '*';
     }
-    console.log('')
+    console.log(line);
 }
+
+// if ( (i + j) % 2 ! === 0) { //itt vizsgalja, hogy a sorok szama, ahol 0 vagy x kerul, paros vagy paratlan e
+//     line += '%';
+// } else {
+//     line += ' ';
+// }
 
 
 // Write a program that draws a
