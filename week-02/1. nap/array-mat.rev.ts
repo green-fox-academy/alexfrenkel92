@@ -43,28 +43,28 @@ console.log(arr3);
 
 let myMatrix: number[][] = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 
-// console.log(myMatrix);
-// console.log(myMatrix[0]);
+console.log(myMatrix);
+console.log(myMatrix[0]);
 // console.log(myMatrix[0][0]); //0ik elem 0ik eleme
-// console.table(myMatrix);
-// console.log(myMatrix[2][1]);
+console.table(myMatrix);
+// // console.log(myMatrix[2][1]);
 
-let firstLine: number[] = myMatrix[0];
-let firstElement: number = myMatrix[0][0] //firtsLine[0] - ugyanazt jelenti a ketto
+// let firstLine: number[] = myMatrix[0];
+// let firstElement: number = myMatrix[0][0] //firtsLine[0] - ugyanazt jelenti a ketto
 
-console.log(firstLine);
-console.log(firstElement);
+// console.log(firstLine);
+// console.log(firstElement);
 
 // for (let i: number = 0; i < myMatrix.length; i++)  { //i-n egyessevel akaork vegig menni jelenti a ++
 //     console.log(myMatrix[i]);
 // }
 
-for (let i: number = 0; i < myMatrix.length; i++)  { //i-n egyessevel akaork vegig menni jelenti a ++
-    for (let j: number = 0; j < myMatrix[i].length; j++) {
-    // console.log(i, j);
-    console.log(myMatrix[i][j]);
-    }
-}
+// for (let i: number = 0; i < myMatrix.length; i++)  { //i-n egyessevel akaork vegig menni jelenti a ++
+//     for (let j: number = 0; j < myMatrix[i].length; j++) {
+//     // console.log(i, j);
+//     console.log(myMatrix[i][j]);
+//     }
+// }
 
 // let myText: string = 'Alig varom a szunetet';
 // console.log(myText.split(' ')); //minden szo egy elem, a szuneteket kivagja
