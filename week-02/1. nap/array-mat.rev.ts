@@ -61,7 +61,7 @@ console.log(firstElement);
 
 for (let i: number = 0; i < myMatrix.length; i++)  { //i-n egyessevel akaork vegig menni jelenti a ++
     for (let j: number = 0; j < myMatrix[i].length; j++) {
-    console.log(i, j);
+    // console.log(i, j);
     console.log(myMatrix[i][j]);
     }
 }
