@@ -10,6 +10,13 @@
 //  - Download games
 //      - Diablo
 
-let todoText: string = ' - Buy milk\n';
+let todoText: string[] = ['My todo:', ' - Buy milk', ' - Download games', '  - Diablo'];
 
-console.log(todoText);
+todoText.forEach(
+    function(todoText){
+        console.log(todoText);
+    }
+)
+
+
+
