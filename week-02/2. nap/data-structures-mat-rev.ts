@@ -7,7 +7,7 @@ let newString: string = example.replace('Reddit', 'Awesome');
 console.log(newString);
 
 //substring
-console.log(example.substring(0, 7)) //honnan indul, meddig megy. Ha nincs megadva zaro ertek, srting vegeig megy
+console.log(example.substring(0, 7)) //honnan indul, meddig megy. Ha nincs megadva zaro ertek, string vegeig megy
 console.log(example.substring(5)); //Kiir: ddit
 
 //charIndex
