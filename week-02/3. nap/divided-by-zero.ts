@@ -6,12 +6,18 @@
 
 
 function getDivide (x: number) {
-    let divide = 10 / x;
-    if (x <= 0) {
-        console.log('Fail');
+    if (x === 0) {
+        throw Error ('Error');
     } else {
+        let divide = 10 / x;
         console.log(divide);
     }
 }
 
-getDivide(-8);
+// getDivide(0);
+
+try {
+    getDivide(0);
+} catch (e) {
+    console.log('Nem oszthato')
+}
