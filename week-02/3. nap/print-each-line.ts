@@ -14,5 +14,5 @@ try{
     let filecontent = fs.readFileSync(path, 'utf-8');
     console.log(filecontent);
 }   catch (e) {
-    console.log('Nincs mit olvasni');
+    console.log('File not found');
 }
