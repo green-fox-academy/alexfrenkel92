@@ -19,20 +19,3 @@ function addSingleLine (addname) {
 }
 
 addSingleLine(myname);
-
-// const fs = require('fs');
-// const filepath = './myfile2.txt';
-
-// function countLines (path) {
-//     try {
-//     let filecontent = fs.readFileSync(path, 'utf-8');
-//     let splitted: string[] = filecontent.split('\n');
-//     let nrOfRows = splitted.length;
-//     console.log(nrOfRows);
-//         }
-//     catch (e) {
-//     console.log(0);
-//     }    
-// }
-
-// countLines(filepath);

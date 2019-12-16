@@ -23,16 +23,9 @@ nevek.forEach(
     }
 )
 
-// nevek.forEach(
-//     function(nevek){
-//         let i:number = 0; i < nevek.length; i++;
-//         console.log(i, nevek);
-// })
+for (let i: number = 0; i < nevek.length; i++) {
+    console.log(i + 1 + '. ' + nevek[i]);
+}
 
-let nevekElement: string[] = nevek.split(' ');
 
 // let quote1: string[] = quote.split(' ');
-
-// quote1.splice(3, 0, 'always takes longer than');
-// quote = quote1.join(' ');
-// console.log(quote);
