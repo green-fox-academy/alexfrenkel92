@@ -15,26 +15,30 @@ class Animal {
         this.thirst = thirst;
         this.hunger = hunger;
     }
-    eat(): void {
-        this.hunger =- 1;
+    eat(): void { //nincs visszateresi erteke, ezert void fuggveny
+        this.hunger--; // a parancs, hogy novelje meg az ehseget
     }
-    drink(){
-        this.thirst =- 1;
+    drink(): void {
+        this.thirst -= 1; // a parancs, hogy novelje meg a szomjat
     }
-    play(){
+    play(): void {
         this.hunger++;
         this.thirst++;
         // return 'i played';
     }
-    getHunger(): number {
+    getHunger(): number { //kutya ehseg szintjet adja vissza
         return this.hunger;
+    }
+    getThirsty(): number {
+        return this.thirst;
     }
 }
 
 let dog = new Animal (25, 78);
-dog.play();
+dog.drink();
 console.log(dog.getHunger());
 console.log(dog);
+console.log(dog.getThirsty());
 
 // class Human {
 //     name: string;
