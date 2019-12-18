@@ -19,7 +19,7 @@ class Animal {
         this.hunger--; // a parancs, hogy novelje meg az ehseget
     }
     drink(): void {
-        this.thirst -= 1; // a parancs, hogy novelje meg a szomjat
+        this.thirst -= 1; // a parancs, hogy csokkentse a szomjat
     }
     play(): void {
         this.hunger++;
