@@ -8,7 +8,7 @@
 // countletters('alma');
 
 
-export function countletters (text: string): {} {
+export function countletters (text: string): {} { //elso {} a 21sor return miatt kell. Ha kiveszem, return helyett console.log kell
     let counted: { [k: number]: number } = {};
     for (let i = 0; i < text.length; i++) {
 	    let currentNumber = text[i];
@@ -18,7 +18,7 @@ export function countletters (text: string): {} {
 		    counted[currentNumber] = 1;
         }
     }
-return counted;
+return counted; //mivel nem console.log van, ezert 11sorba kell {}
 }
 
-countletters('alma');
+console.log(countletters('alma'));

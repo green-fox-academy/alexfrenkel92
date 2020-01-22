@@ -1,4 +1,4 @@
-let num: number = 5;
+let num: number = 3;
 let sum: number = 0;
 
 for (let i: number = 0; i < num; i++) {

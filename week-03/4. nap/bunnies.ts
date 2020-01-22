@@ -11,14 +11,3 @@ function bunnyEars (N) {
 }
 
 console.log('Total number of bunny ears: ' + bunnyEars(6));
-
-
-// function nSum(N) {
-//     console.log(N)
-//     if (N == 1) {                        
-//         return N;
-//     }
-//     return nSum(N - 1) + N;
-// }
-
-// console.log(nSum(5));

@@ -1,0 +1,23 @@
+1. Tell us an important benefit of compiled languages
+
+Compiled languages are the best for low-level programming, programs can run faster on computers in a compiled language. A compiled language does not need 'translation', it directly communicates with the machine on which it runs. Compiled languages are very efficient because they are very 'close' to machine code. The most popular compiled language today is C++. Interpreted languages (like JS) have to be executed first to direct machine code, which takes time and needs resources.
+Example: As lots of simple machines run embedded programs, these machines have very low-cost computing units. They need a low level program in a compiled language, which can access the machine code directly (e.g. an A/C unit).
+
+
+
+2. What is the difference between static (class) method and instance method?
+
+Instance method has this name because at first, we have to create a class and then to invoke instance method, we 
+have to create an object (instance) and we can call methods ON the created object. Every individual object created 
+has its own copy of the instance methods of their class.
+
+Static methods can be called without creating individual objects in a class. They can reference on the class name or 
+an object of a class. Static methods can be called without creating an instance of the class.
+
+Example:
+Instance method:
+let audi: MyCar = new MyCar();
+audi.get();
+
+Same with static method:
+MyCar.get();

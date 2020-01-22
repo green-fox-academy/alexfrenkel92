@@ -22,3 +22,4 @@ function purpleSteps3D (rectPW, rectPH) {
 for (let i: number = 0; i < 400; i += 25) {
     purpleSteps3D(i, i);
 }
+

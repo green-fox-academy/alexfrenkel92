@@ -1,0 +1,41 @@
+1. What is encapsulation? Explain it with an example!
+
+Encapsulation is in connection with object-oriented programming and is used to hide values (data) and prevent access for security reasons. The internal representation of the object is usually hidden from the object's definition, its values can be accessed only by the object's methods provided in the class (getters & setters).
+
+Example: 
+public class Employee {
+    private BigDecimal salary = new BigDecimal(50000.00);
+    
+    public BigDecimal getSalary() {
+        return salary;
+    }
+
+    public static void main() {
+        Employee e = new Employee();
+        BigDecimal sal = e.getSalary();
+    }
+}
+The employee's salary can only be reached by using the getSalary() method.
+
+2. Explain what is the DRY principle in programming
+
+DRY is the abbreviation of 'Don't repeat yourself'. You can make your code more transparent and to use less resources by using the DRY principle.
+Every piece of information must have a single, unmistakable representation in the system.
+Any modification of a single element of a system does not require a change in other logically unrelated elements.
+
+Example:
+DRY version:
+
+isPriority(): boolean {
+        return this.type === 'F35';
+    }
+
+WET version:
+
+isPriority(): boolean {
+if(this.type === 'F35'){
+return true;
+} else {
+return false;
+}
+}

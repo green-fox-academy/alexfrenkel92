@@ -41,7 +41,7 @@ console.log(arr3);
 
 // matrixok
 
-let myMatrix: number[][] = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+// let myMatrix: number[][] = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 
 console.log(myMatrix);
 console.log(myMatrix[0]);

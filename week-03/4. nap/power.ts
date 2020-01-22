@@ -9,14 +9,4 @@ function power (base: number, N: number) {
     return (power(base, N - 1) * base);
 }
 
-console.log(power(2, 5));
-
-// function power (base: number, N: number ) {
-//     let total = 0;
-//     for (let i = 1; i <= base; i++) {
-//         total = base * N * i;
-//     }
-//     return total;
-// }
-
-// console.log(power(3, 4));
+console.log(power(2, 3));

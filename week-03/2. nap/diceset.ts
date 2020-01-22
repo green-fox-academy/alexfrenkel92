@@ -29,6 +29,19 @@ class DiceSet {
       return this.dice[index];
     }
   }
+  currentNumber(): number[] {
+      for (let i: number = 0; i < this.numOfDices; i++) {
+          return this.dice;
+      }
+    }
+  rollDiceUntil(): void {
+    this.dice === 6;
+    }
+}
+for(i = 0; i < numOfDices.length; i++){
+    if(!numOfDices[i] === 6){
+        reroll []
+    } else if (numofdices[i] === 6)
 }
 
 // You have a `DiceSet` class which has a list for 6 dice
@@ -38,21 +51,36 @@ class DiceSet {
 // Your task is to roll the dice until all of the dice are 6
 
 let diceSet = new DiceSet();
-console.log(diceSet.roll());
+
+// unction chosenPokemon(pokemonOfAsh, wildPokemon){
+//     for (let i = 0; i < pokemonOfAsh.length; i++) {
+//         if(pokemonOfAsh[i].effectiveAgainst == wildPokemon.type) {
+//             return pokemonOfAsh[i].name;
+//         }
+//     }
+
+
+console.log(diceSet.roll);
 console.log(diceSet.getCurrent());
 
-console.log("------------------");
+// diceSet.reroll();
+// console.log(diceSet.getCurrent());
+// diceSet.reroll();
+// console.log(diceSet.getCurrent());
+// console.log(diceSet.getCurrent(0));
 
-diceSet.reroll();
-console.log(diceSet.getCurrent());
+// console.log("------------------");
 
-console.log("------------------");
+// diceSet.reroll();
+// console.log(diceSet.getCurrent());
 
-console.log(diceSet.getCurrent(5));
-diceSet.reroll();
-console.log(diceSet.getCurrent());
+// console.log("------------------");
 
-console.log("------------------");
+// console.log(diceSet.getCurrent(5));
+// diceSet.reroll();
+// console.log(diceSet.getCurrent());
 
-diceSet.reroll(4);
-console.log(diceSet.getCurrent());
+// console.log("------------------");
+
+// diceSet.reroll(4);
+// console.log(diceSet.getCurrent());
