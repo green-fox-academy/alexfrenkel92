@@ -31,9 +31,11 @@ app.listen(3000, function () {
 //  beirod html:5 es general rakas kodot, amit nem kell berini
 //  htmlbe ha js kodot akarok: <% > => ezt szerveroldali renderelesnek hivjak
 //Szerveroldali rendereles:
-//  amikor dinamikusan valtozik meg a kod a kliens odlalon
+//  amikor dinamikusan valtozik meg a kod a kliens oldalon
 
 //html body-ba <% username %>
 //  username valtozot behelyetessiti html kodba
 // <%= index %>  for loopba az index eredmenye latszani fog, az = jel miatt
+
+//node mode: nem kell kezzel, hanem magatol ujra indul a ejs valtoztatas soran
 
