@@ -8,12 +8,3 @@ for (let i = 0; i < liOldItems.length; i++) {
 }
 
 console.log(liOldItems.children);
-
-// let ilEl = document.querySelectorAll('li');
-
-
-
-// ulElement.setAttribute('class', 'color');
-
-
-// console.log(ulElement);
