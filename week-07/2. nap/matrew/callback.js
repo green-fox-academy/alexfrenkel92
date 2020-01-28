@@ -22,4 +22,4 @@ let intervalId = setInterval(() => {
   if (counter === 0) {
     clearInterval(intervalId);
   }
-}, 1000);
+}, 1000);       
