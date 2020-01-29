@@ -1,0 +1,23 @@
+HTTP vs HTTPS
+Domain nev: milyen ip cim van a keres mogott, kivel akarok beszelni
+URL reszei:
+    Path: .com\utan jovo elso szo...pl google kereses soran: .com\search....majd a keresett szo
+    URL request: program megkapja a linket, pl fuggvenyben es eldonti mi kell onnan, mihez kezd vele
+    Querry:
+HTTP request methods: post, put, patch, delete, get, options, head, stb
+    pl. ha torolni akarom az url-t kuldok ra egz delete request method-torolni
+    Ha olvasom a linket, a GET a request method
+HTTP body:
+    put, post, patch-nek van bodija, tobbinek nincs
+    pl uj profilkep feltoltesnel, vagz adat feltoltesnel van body
+    HEADerbe beleirja, milyen tipusu info es mi kerul kuldesre, keresre
+JSON - JavaScript Object Notation
+    objekteket es arrayeket kombinal egy adatstrukturaban
+HTTP valasz reszei:
+    Statusz: pl 200 (minden rendben volt)
+        Szamok, pl 404
+    http.cat - macskakal 'elmagzarazva' a kodok
+API - ha van egy futo alkalmazas, azt tudod maceralni kivulrol, mindenfele dolog amit kuldeni tudsz neki
+    nem user interfacen, kattintassal, hanem programozassal -> ez mar API
+    WEB API - http keresekkel lehet vele csevegni
+        milyen http keres alapjan, mit fog csinalni
