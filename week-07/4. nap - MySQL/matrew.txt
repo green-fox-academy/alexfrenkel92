@@ -1,0 +1,6 @@
+tabla neve users
+DESCRIBE user (tabla)
+INSERT INTO users (ez  atabla neve) (name)(oszlop neve) VALUE ('pistike')
+    pistiket beirja a name oszlopba
+SHOW DATABASE;
+USE matreviews;
