@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>The great Goat Gallery</title>
+</head>
+
+<body>
+
+    <div class="title">
+        <h1>Enjoy this rare collection of our Greatest Goats, ever lived</h1>
+    </div>
+
+    <div class="thumbnails">
+        <div class="thumbnail">
+            <img src="./Photos/goat5.jpg" alt="Mr. Goat" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="thumbnail">
+            <img src="./Photos/goat3.jpg" alt="Goat kids" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="thumbnail">
+            <img src="./Photos/goat4.jpg" alt="Overdosed Goat" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="thumbnail">
+            <img src="./Photos/goat2.jfif" alt="Goat Spa" style="width:100%" onclick="myFunction(this);">
+        </div>
+    </div>
+
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg">
+        <div id="imgtext"></div>
+    </div>
+
+    <script>
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>

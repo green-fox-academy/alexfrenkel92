@@ -66,10 +66,16 @@ const cocktails = [
 
 app.set('view engine', 'ejs');
 
-app.listen(3050, () => {
-    console.log('The app is running on port 3040.');
-});
+// app.listen(3050, () => {
+//     console.log('The app is running on port 3040.');
+// });
 
 app.get('/', (req, res) => {
    res.render('cocktails', {cocktails})
 });
+
+
+let ginfizz = cocktails[0];
+let ginfizz2 = JSON.stringify(ginfizz);
+console.log(ginfizz.hasOwnProperty("name"));
+console.log(ginfizz.price);

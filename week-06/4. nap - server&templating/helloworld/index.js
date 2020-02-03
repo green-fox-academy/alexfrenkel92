@@ -1,5 +1,5 @@
-const express = require('express');
-const app = express();
+const express = require('express'); //behuzzuk az expresst
+const app = express(); //letrehozzuk az alkalmazast
 const PORT = 3020;
 
 //set the view engine to ejs
@@ -28,7 +28,7 @@ app.get('/index', (req, res) => {
     res.sendFile(__dirname + '/index.html');
 });
 
-// start express app on port 3000
+// start express app on port 3000 .... hallgatozik a porton
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
 });

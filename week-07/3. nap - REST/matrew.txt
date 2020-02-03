@@ -21,3 +21,5 @@ API - ha van egy futo alkalmazas, azt tudod maceralni kivulrol, mindenfele dolog
     nem user interfacen, kattintassal, hanem programozassal -> ez mar API
     WEB API - http keresekkel lehet vele csevegni
         milyen http keres alapjan, mit fog csinalni
+Express
+    abban segit, hogy http keresekre valaszoljunk

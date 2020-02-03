@@ -1,0 +1,81 @@
+.title {
+    /* position: relative; */
+    /* margin-top: 100px; */
+    text-align: center;
+    color: green;
+}
+
+.thumbnails {
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: pink;
+    width: 50%;
+    padding: 10px;
+
+}
+
+.thumbnail > img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.thumbnails > div {
+    margin: 10px;
+}
+
+.thumbnail img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.thumbnails:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+.container {
+    position: relative;
+    display: none;
+}
+
+.container > img {
+    /* position: relative; */
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 30%;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    text-align: inherit;
+    /* left: 15px; */
+    color:green;
+    font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+/* .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+} */
+
+body {
+    margin: 10px;
+    color: yellow;
+    font-family: Arial;
+}
