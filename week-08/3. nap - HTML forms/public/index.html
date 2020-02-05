@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Forms</title>
+</head>
+<body>
+  <p>My login form:</p>
+  <form action="/login" method="POST">
+    <label for="username">Username
+      <input type="text" id="username" name="username">
+    </label>
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password">
+    <label for="plate">Plate</label>
+    <input type="text" id="plate" pattern="[A-Z]{3}-[0-9]{3}" placeholder="ABC-123">
+    <!-- <textarea name="" id="" cols="15" rows="2" placeholder="Ide irjon uram"></textarea> -->
+    <button type="submit" >Login</button>
+  </form>
+  <script src="index.js"></script>
+</body>
+</html>

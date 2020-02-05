@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Checkbox, Radio, Select</title>
+</head>
+
+<body>
+  <form id="select" action="" method="POST">
+    <label>Choose a pet:
+      <select name="pets" id="pet-select" required="true">
+        <option value="">--Please choose an option--</option>
+        <option value="dog">Funky Dog</option>
+        <option value="cat">Cat</option>
+        <option value="hamster">Hamster</option>
+        <option value="parrot">Parrot</option>
+        <option value="spider">Spider</option>
+        <option value="goldfish">Goldfish</option>
+      </select>
+    </label>
+    <button type="submit">Send</button>
+  </form>
+
+  <form action="" method="POST" id="checkbox">
+    <fieldset>
+      <legend>Choose your interests</legend>
+      <input type="checkbox" id="coding" name="interest" value="1">
+      <label for="coding">Coding</label>
+      <input type="checkbox" id="music" name="interest" value="2">
+      <label for="music">Music</label>
+    </fieldset>
+    <button type="submit">Check</button>
+  </form>
+
+  <form action="" method="POST" id="radio">
+    <p>Please select your preferred contact method:</p>
+    <div>
+      <label for="contactChoice1">Email
+        <input type="radio" id="contactChoice1" name="contact" value="email">
+      </label>
+      <label for="contactChoice2">Phone
+        <input type="radio" id="contactChoice2" name="contact" value="phone">
+      </label>
+      <label for="contactChoice3">Mail
+        <input type="radio" id="contactChoice3" name="contact" value="mail">
+      </label>
+    </div>
+    <button type="submit">Radio</button>
+  </form>
+
+  <script src="example.js"></script>
+</body>
+
+</html>
