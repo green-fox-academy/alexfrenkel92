@@ -12,23 +12,23 @@
     <form id="question" action="">
         <p>Hey human, what is your favourite pet?</p>
         <label for="dog">Dog</label>
-            <input type="radio" id="dog" name="favouritePet">
+            <input type="radio" id="dog" class="favouritePet" name="animal" value="dog">
         <label for="cat">Cat</label>
-            <input type="radio" id="cat" name="favouritePet">
+            <input type="radio" id="cat" class="favouritePet" name="animal" value="cat">
         <label for="viktor">Viktor the Goldfish</label>
-            <input type="radio" id="viktor" name="favouritePet">
-        <button type="submit">Spit it out</button>
+            <input type="radio" id="viktor" class="favouritePet" name="animal" value="viktor">
+        <!-- <button type="submit">Spit it out</button> -->
     </form>
 
     <button style="display: none;" type="submit">Sign up</button>
 
-    <form style="display: none;" id="signup" action="">
+    <form style="display: none;" id="signup">
         <p>You do want to sign up for mega funny cat facts, right? .....right?</p>
         <label for="yesCat">Hell yeeaaaahhhh!</label>
-            <input type="radio" id="yesCat">
+            <input type="radio" id="yesCat" name="facts" value="yes">
         <label for="noCat">No, I'm not worthy :-(</label>
-            <input type="radio" id="noCat">
-        <button type="submit">I love cats! (used to be one)</button>
+            <input type="radio" id="noCat" name="facts" value="no">
+        <button type="submit" id="loveCats" style="display: none;">I love cats!</button>
     </form>
 
     <script src="buttondisable.js"></script>
