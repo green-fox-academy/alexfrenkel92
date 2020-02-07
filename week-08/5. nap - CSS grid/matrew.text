@@ -1,0 +1,16 @@
+grid-gap: 10px
+grid-colum vagy rows: 1/4 -> 1nel kezdi, 4nel vegzodik
+grid-template-column: repeat(4, 5fr)
+grid-column: span 3 -> 3 cellan at tart
+    border
+    padding
+    margin: 0 ajanlott
+grid reszeket el lehet nevezni
+pl 1-2 vonal kozotti sor, legyen HEADER
+
+<div type="text" action="/add">
+    a div-re kattintva atvezet az /add lindkre
+
+e.preventDefault
+    Lenyege, hogy kattintasnal nem tolt ujra az oldal
+    

@@ -1,0 +1,27 @@
+.main div:nth-child(even) {
+    background-color: darkseagreen;
+}
+
+.main div {
+    background-color: darkorange;
+}
+
+body {
+    margin: 0px;
+}
+
+#text {
+    align-self: center;
+    text-align: center;
+    padding: 30px;
+    border: 10px solid black;
+}
+
+.main {
+    display: grid;
+    height: 200px auto; /* max 200px height, addig peddig auto. 30 alap, mert az a text paddingje */
+    width: auto;
+    margin: 20px 20px;
+    grid-template-columns: 1fr 6fr 1fr;
+    /* grid-gap: 10px; */
+}
