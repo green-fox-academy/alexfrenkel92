@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="movieselector.css">
+    <title>Movie Selector</title>
+</head>
+<body>
+    <div id="body">
+    <h1>Movie Selector</h1>
+        <form id="genreSelector">
+                <select class="genre" required="true">
+                    <option value="">Select a genre</option>
+                    <option class="genreType" name="genree" value="scifi">Sci-fi</option>
+                    <option class="genreType" name="genree" value="drama">Drama</option>
+                    <option class="genreType" name="genree" value="comedy">Comedy</option>
+                </select>
+        </form>
+
+        <form id="movieSelector">
+            <label>
+                <select id="movies" required="true">
+                    <option value="selector">Select a movie</option>
+                    <option class="scifi" style="display: none;">Moon</option>
+                    <option class="scifi" style="display: none;">2001: A Space Odyssey</option>
+                    <option class="scifi" style="display: none;">Contact</option>
+                    <option class="drama" style="display: none;">Darkest Hour</option>
+                    <option class="drama" style="display: none;">There Will Be Blood</option>
+                    <option class="drama" style="display: none;">American Beauty</option>
+                    <option class="comedy" style="display: none;">Airplane!</option>
+                    <option class="comedy" style="display: none;">Deadpool</option>
+                    <option class="comedy" style="display: none;">Wayne's World</option>
+                </select>
+            </label>
+        </form>
+        <p class="selectedMovie">The selected movie is: -</p>
+        <script src="movieselector.js"></script>
+    </div>
+</body>
+</html>

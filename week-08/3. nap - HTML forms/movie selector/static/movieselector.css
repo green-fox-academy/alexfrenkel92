@@ -1,0 +1,34 @@
+html {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+body {
+    grid-column: 2 / 3;
+    margin: 0px;
+}
+
+h1 {
+    grid-column: 1 / 3;
+}
+
+#body {
+    background-color: burlywood;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#genreSelector {
+    grid-column: 1 / 2;
+    place-self: center;
+}
+
+#movieSelector {
+    grid-column: 2 / 3;
+    place-self: center;
+}
+
+.selectedMovie {
+    grid-column: 1 / 3;
+}
