@@ -1,0 +1,5 @@
+Teszteleshez telepiteni kell:
+    chai
+    mocha
+    tape
+    supertest
