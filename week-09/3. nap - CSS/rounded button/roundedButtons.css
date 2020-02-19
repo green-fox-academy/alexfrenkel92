@@ -1,0 +1,65 @@
+#firstSection button:nth-child(1) {
+    background-color: lightskyblue;
+}
+
+#firstSection button:nth-child(2) {
+    background-color: lightgreen;
+}
+
+#firstSection button:nth-child(3) {
+    background-color: lightcoral;
+}
+
+#secondSection button:nth-child(1) {
+    background-color: lightcyan;
+}
+
+#secondSection button:nth-child(2) {
+    background-color: tomato;
+}
+
+#secondSection button:nth-child(3) {
+    background-color: whitesmoke;
+}
+
+html {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    height: 300px;
+}
+
+.buttons {
+    grid-column: 2/3;
+    place-self: center;
+
+}
+
+button {
+    height: 30px;
+    width: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 0;
+}
+
+button:hover {
+    opacity: 0.7;
+    outline: 2px solid black;
+}
+
+/* @media screen and (max-width: 700px) {
+    html {
+        grid-template-columns: 0fr;
+        grid-template-rows: repeat(8, 1fr);
+        height: 600px;
+
+    }
+    .first {
+        color: chartreuse;
+
+        justify-self: right;
+        grid-row: 3/4;
+    }
+} */
