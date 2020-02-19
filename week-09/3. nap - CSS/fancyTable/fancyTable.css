@@ -1,0 +1,39 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+td, th {
+    border: 1px solid grey;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.table {
+    grid-column: 2/3;
+    place-self: center;;
+    border: 20px solid seashell;
+}
+
+table {
+    border-collapse: collapse;
+    border-style: hidden; /*elrejti a kulso bordereket*/
+    width: 250px;
+}
+
+thead {
+    background-color: khaki;
+    border-bottom: 3px solid grey;
+}
+
+tbody {
+    background-color: rgb(238, 234, 234);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+.money::before {
+    content: '$ ';
+}
