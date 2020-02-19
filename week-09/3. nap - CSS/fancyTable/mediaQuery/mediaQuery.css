@@ -1,0 +1,26 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 200px;
+}
+
+#one {
+    background-color: steelblue;
+}
+
+#two {
+    background-color: tan;
+}
+
+#three {
+    background-color: tomato;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+        height: 200px;
+    }
+}
