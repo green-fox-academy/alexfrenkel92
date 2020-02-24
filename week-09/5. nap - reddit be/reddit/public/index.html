@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/index.css">
+    <title>Reddit Clone</title>
+</head>
+
+<body>
+    <div>
+        <img src="./assets/donald.jpeg" alt="Snow" style="width: 990px;">
+        <div>
+            <h1 id="greatTitle">
+                Make Reddit Great Again!
+            </h1>
+        </div>
+    </div>
+
+    <form id="postSubmit" action="/post" method="post">
+        <p id="addGreatPost">Submit your great post below</p>
+        <div id="title">
+            <label for="title">Title</label>
+            <input name="title">
+        </div>
+        <div id="url">
+            <label for="url">URL</label>
+            <input name="url" type="url">
+        </div>
+        <button type="submit"  id="submitButton">Submit</button>
+    </form>
+
+    <!-- onclick="window.location.reload()" -->
+
+    <div class="mainContainer"></div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
