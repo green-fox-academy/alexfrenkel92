@@ -1,0 +1,36 @@
+sow database
+use adott cucc
+describe table
+
+windows.onload
+    akkor foltatja a dolgot, amikor az elozo keresre valasz erkezett
+    pl betoltodott az adat az endpoint-rol
+    mivel nem az en gepemen lesz, ezert varni kell
+
+onload az onreadystatecange-t helettesiti, mert nem az en gepemen varni
+AMUGY FETCH-T erdemes hasznalni
+
+Ezzel itt adunk hozza videot
+conn.queryINSERT INTO songs(title, singer, url) VALUES (?, ?, ?),
+    [req.body.title, req.body.singer, req.body.singer]
+
+body.parser
+    segit a bodybol kiolvasni az adatot
+
+youtube linkben a /watch-t lecserelni embeded-re es valami query-t is???
+
+TELEPITENI KELL:
+    BODY-PARSER
+    EXPRESS
+    MYSQL
+    NODEMON
+
+    id, title, artist, url
+    duration should be auto generated
+
+    CREATE TABLE tracks(
+id INT auto_increment primary key NOT NULL,
+title VARCHAR(100) NOT NULL,
+artist varchar(200) NOT NULL,
+duration int not null,
+url varchar(1000) not null);

@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
 module.exports = app;
-const bodyParser = require('body-parser');
-app.use(bodyParser.json());
+// const bodyParser = require('body-parser');
+// app.use(bodyParser.json());
 
 app.get('/groot/', (req, res) => {
     if (!req.query.message) {

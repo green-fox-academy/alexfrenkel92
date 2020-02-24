@@ -48,25 +48,36 @@ app.get('/tracks', (req, res) => {
 
 app.post('/post', (req, res) => {
     const videoId = req.body.videoId;
-
-    fetchVideoInfo(`${videoId}`).then(function (videoInfo) {
+    fetchVideoInfo(`${videoId}`)
+    .then( (videoInfo) => {
         console.log(videoInfo.title, videoInfo.owner, videoInfo.duration);
         const id = 0;
         const title = videoInfo.title;
         const artist = videoInfo.owner;
         const duration = videoInfo.duration;
         const url = videoInfo.url;
-
         conn.query(
             `INSERT INTO tracks (title, artist, duration, url) VALUES (?, ?, ?, ?)`,
             [title, artist, duration, url]);
-            (err) => {
-                if (err) {
-                    res.status(500).send('Unknown table');
-                    return null;
-                }
+        (err) => {
+            if (err) {
+                res.status(500).send('Unknown table');
+                return null;
             }
-            res.redirect('/tracks');
+        }
+        res.redirect('/tracks');
     });
+})
 
+app.delete('/delete/:id', (req, res) => {
+    conn.query(
+        `DELETE FROM tracks WHERE id = ${req.params.id}`,
+        (err, result) => {
+            if (err) {
+                res.status(500).send('Delete failed');
+                return null;
+            }
+            res.status(200).send(result);
+        }
+    )
 })

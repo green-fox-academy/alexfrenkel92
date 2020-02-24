@@ -28,7 +28,8 @@ describe('groot endpoints work', () => {
     it('groot no translation', async() => {
         let res = await request(app)
             .get('/groot/')
-            .expect(404);
+            .expect(404)
+            .query({ message: '' });
             expect(res.body).to.deep.equal(noTranslation);
     })
 

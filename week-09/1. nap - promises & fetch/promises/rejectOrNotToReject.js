@@ -10,8 +10,8 @@ function onRejected(error) {
     console.log(error);
 }
 
-promise.
-then((result) => {
+promise
+    .then((result) => {
         console.log(result);
     }, (err) => {
         onRejected(err);

@@ -1,0 +1,8 @@
+    css matic
+    css outline
+        nem box model resze
+        pl piros kerettel jelzi, hogy nem jelolted be a privacy policyt
+    box-shadow
+        pl buttonra
+        tetejen vilagosabb
+        alul sotetebb

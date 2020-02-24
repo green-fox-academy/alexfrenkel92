@@ -60,7 +60,7 @@ app.post('/post', (req, res) => {
         [title, url, timestamp, score]);
         (err) => {
             if (err) {
-                res.status(500).send('Unkown table');
+                res.status(500).send('Unknown table');
                 return null;
             }
         }
