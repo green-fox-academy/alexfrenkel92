@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takeout</title>
+</head>
+<body>
+    <h1>Welcome to the Greatest Takeout ever!</h1>
+    <h2>Please enter your info and choose your meal</h2>
+    <form action="" id="myForm">
+        <div id="inputFields">
+            <label for="name">Name</label>
+            <input name="name" type="text" id="inputFieldName">
+            <label for="address">Address</label>
+            <input name="address" type="text" id="inputFieldAddress">
+        </div>
+        <div id="bases">
+            <h3>Bases</h3>
+            <label for="rice">Rice noddles</label>
+                <input class="radioButton" id="rice" name="base" type="radio" value="rice noddles">
+            <label for="egg">Egg noddles</label>
+                <input class="radioButton" id="egg" name="base" type="radio" value="egg noddles">
+            <label for="white">White rice</label>
+                <input class="radioButton" id="white" name="base" type="radio" value="white rice">
+        </div>
+        <div id="toppings">
+            <h3>Toppings</h3>
+            <select name="toppings" id="toppingsDropdownList">
+                <option value="">Please choose an option</option>
+                <option class="dropdownList" label="topping" value="chicken">Chicken</option>
+                <option class="dropdownList" label="topping" value="beef">Beef</option>
+                <option class="dropdownList" label="topping" value="smoked tofu">Smoked tofu</option>
+            </select>
+        </div>
+        <button type="submit" id="submitButton">Order</button>
+    </form>
+    <p id="orderId"></p>
+
+      <script src="./index.js"></script>
+
+</body>
+</html>
