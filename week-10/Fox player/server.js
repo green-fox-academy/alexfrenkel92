@@ -13,7 +13,7 @@ app.use(express.static('public')); //ugyanaz mint app.get es dirname
 app.use(bodyParser.urlencoded());
 
 app.listen(PORT, () => {
-    console.log(`Server is running on ${PORT}`)
+    console.log(`Server is running on port ${PORT}`)
 })
 
 app.get('/index', (req, res) => { //ugyanaz mint express.static('public')
