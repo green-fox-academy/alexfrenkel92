@@ -52,4 +52,4 @@ function getPost(method, url) {
     })
 }
 
-getPost('GET', 'http://localhost:3000/posts');
+getPost('GET', 'http://localhost:8080/posts');

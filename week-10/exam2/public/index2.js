@@ -23,9 +23,6 @@ myForm.addEventListener('submit', (e) => {
         })
         .then((data) => {
             console.log(data); //insertID megjeleniteshez alsot kikommentelni
-            response.innerText = data.code;
+            response.innerText = `Your URL is aliased to ${data.url} and your secret code is ${data.code}.`;
         })
-
 })
-
-//Your URL is aliased to {alias} and your secret code is {secret code}.

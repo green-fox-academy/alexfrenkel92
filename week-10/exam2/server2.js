@@ -73,6 +73,6 @@ app.post('/aliases', (req, res) => {
                     }
                     res.send(rows[0]);
                 })
-            // res.send(rows); //insertID megjeleniteshez ez kellett
+            // res.send(rows); //insertID megjeleniteshez ez segitett
         })
 })
