@@ -33,12 +33,25 @@ conn.connect((err) => {
 
 
 app.get('/', (req, res) => { //ugyanaz mint express.static('public')
-    res.sendFile(__dirname + '/public/index.html'); 
+    res.sendFile(__dirname + '/public/index.html');
 });
 
 app.get('/addresses', (req, res) => {
     conn.query(
         `SELECT * FROM addresses`, (err, rows) => {
+            if (err) {
+                console.log(`Cannot retrieve data: ${err.toString()}`);
+                res.sendStatus(404);
+                return null;
+            }
+            res.status(200).send(rows);
+        }
+    )
+})
+
+app.get('/address/:id', (req, res) => {
+    conn.query(
+        `SELECT * FROM addresses WHERE id = ${req.params.id}`, (err, rows) => {
             if (err) {
                 console.log(`Cannot retrieve data: ${err.toString()}`);
                 res.sendStatus(404);
@@ -63,7 +76,15 @@ app.post('/address', (req, res) => {
                 res.status(404).send('Unkown table');
                 return null;
             }
-            res.status(200).send(rows);
-        }
-    )
+            conn.query(
+                `SELECT * FROM addresses WHERE id = ${rows.insertId};`,  //insertId amit kerunk
+                (err, rows) => {
+                    if (err) {
+                        res.status(404).send('Unkown table');
+                        return null;
+                    }
+                    res.send(rows[0]);
+                })
+            // res.status(200).send(rows);
+        })
 })

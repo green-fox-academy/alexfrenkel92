@@ -7,19 +7,43 @@
 </head>
 <body>
     <h1>The Great Address Book</h1>
+
     <h2>Add new address details below:</h2>
-    <form action="" id="newAddressForm">
-        <label for="zip">ZIP</label>
-        <input type="number" id="zip" name="zip" required="required">
-        <label for="city">City</label>
-        <input type="text" id="city" name="city" required="required">
-        <label for="street">Street</label>
-        <input type="text" id="street" name="street" required="required">
-        <label for="nr">Nr</label>
-        <input type="number" id="nr" name="nr" required="required">
+    <form action="" id="addressInput">
+        <label for="zipInput">ZIP</label>
+            <input type="number" id="zipInput" name="zipInput" required="required">
+        <label for="cityInput">City</label>
+            <input type="text" id="cityInput" name="cityInput" required="required">
+        <label for="streetInput">Street</label>
+            <input type="text" id="streetInput" name="streetInput" required="required">
+        <label for="nrInput">Nr</label>
+            <input type="number" id="nrInput" name="nrInput" required="required">
         <button type="submit">Save it</button>
     </form>
     
+    <h2 id="htmlAddressId">Address Id: </h2>
+
+    <h2>Change address details</h2>
+
+    <h3>Provide address id</h3>
+    <form action="" id="loadAddress">
+        <label for="addressId">Address Id</label>
+            <input type="number" id="addressId" name="addressId" required="required">
+        <button type="submit">Load address</button>
+    </form>
+
+    <h3>Make changes below</h3>
+    <form action="" id="addressOutput">
+        <label for="zipOutput">ZIP</label>
+            <input type="number" id="zipOutput" name="zipOutput" required="required">
+        <label for="cityOutput">City</label>
+            <input type="text" id="cityOutput" name="cityOutput" required="required">
+        <label for="streetOutput">Street</label>
+            <input type="text" id="streetOutput" name="streetOutput" required="required">
+        <label for="nrOutput">Nr</label>
+            <input type="number" id="nrOutput" name="nrOutput" required="required">
+        <button type="submit">Save changes</button>
+    </form>
 
     <script src="./index.js"></script>
 </body>
